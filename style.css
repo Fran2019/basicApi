@@ -1,0 +1,86 @@
+:root {
+    --bg: #e0e0e0;
+    --main: #6D6875;
+    --main-opacity: rgb(109, 104, 117, 0.5);
+    --second:#FDFCDC; 
+    --third-buttons: #B5838D;
+    --third-letters: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, h3 {
+	font: 18px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background: var(--bg);
+	color: var(--main);
+}
+
+h1 {
+    background-color: var(--second);
+    text-decoration: underline 2px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline 2px;
+}
+
+.contenedor {
+    display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	gap: 10px;
+	width: 90%;
+	max-width: 1000px;
+	margin: 30px auto 30px auto;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .poster {
+    border-radius: 5px;
+	width: 100%;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: var(--main-opacity);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px;
+}
+
+.paginacion button {
+	background: var(--third-buttons);
+	border: none;
+	border-radius: 0px;
+	color: var(--third-letters);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+    text-decoration: underline 5px;
+}
+
+.titulo {
+	align-content: center;
+}

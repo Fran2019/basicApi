@@ -1,0 +1,22 @@
+body, h3 {
+	font: 14px 'Montserrat', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	width: 90%;
+	max-width: 1000px;
+	margin: 30px auto 30px auto;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .poster {
+    border-radius: 5px;
+	width: 50%;
+}
+
