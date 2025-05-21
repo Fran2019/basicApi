@@ -1,4 +1,3 @@
-<h3>API taken from:</h3> 
-###
+API taken from:
 https://www.themoviedb.org/
 
